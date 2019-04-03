@@ -34,12 +34,12 @@ ActiveRecord::Schema.define(version: 2019_04_02_185111) do
 
   create_table "rented_items", force: :cascade do |t|
     t.bigint "owner_id"
-    t.bigint "borrower_id", default: 0
+    t.bigint "borrower_id"
     t.bigint "item_id"
     t.date "start_date"
     t.date "end_date"
     t.string "start_condition"
-    t.string "returned_condition"
+    t.string "end_condition"
     t.string "availability"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
