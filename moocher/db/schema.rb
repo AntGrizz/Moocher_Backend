@@ -33,19 +33,16 @@ ActiveRecord::Schema.define(version: 2019_04_02_185111) do
   end
 
   create_table "rented_items", force: :cascade do |t|
-    t.bigint "owner_id"
     t.bigint "borrower_id"
     t.bigint "item_id"
     t.date "start_date"
     t.date "end_date"
     t.string "start_condition"
     t.string "end_condition"
-    t.string "availability"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["borrower_id"], name: "index_rented_items_on_borrower_id"
     t.index ["item_id"], name: "index_rented_items_on_item_id"
-    t.index ["owner_id"], name: "index_rented_items_on_owner_id"
   end
 
   create_table "user_groups", force: :cascade do |t|

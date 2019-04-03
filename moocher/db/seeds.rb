@@ -24,8 +24,8 @@ item2 = Item.create(name: 'Book', description: 'The Spook Who Sat By The Door', 
 item3 = Item.create(name: 'Instant Pot', description: 'New Instant Pot', image: 'instant pot', condition: 'good', owner: user1)
 
 
-RentedItem.create(owner: user1, borrower: user2, item: item1, start_date: '2019-04-02', end_date: '2019-05-05', start_condition: 'good', end_condition: 'good', availability: 'available')
+RentedItem.create( borrower: user2, item: item1, start_date: '2019-04-02', end_date: '2019-05-05', start_condition: 'good', end_condition: 'good')
 
-RentedItem.create(owner: user1, borrower: user2, item: item2, start_date: '2019-04-21', end_date: '2019-05-05', start_condition: 'good', end_condition: 'good', availability: 'available')
+RentedItem.create( borrower: user2, item: item2, start_date: '2019-04-21', end_date: '2019-05-05', start_condition: 'good', end_condition: 'good')
 
-RentedItem.create(owner: user1, borrower: user3, item: item3, start_date: '2019-04-21', end_date: '2019-05-05', start_condition: 'good', end_condition: 'good', availability: 'available')
+RentedItem.create( borrower: user3, item: item3, start_date: '2019-04-21', end_date: '2019-05-05', start_condition: 'good', end_condition: 'good')
