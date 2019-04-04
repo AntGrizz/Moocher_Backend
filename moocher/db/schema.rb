@@ -23,17 +23,17 @@ ActiveRecord::Schema.define(version: 2019_04_02_185111) do
 
   create_table "items", force: :cascade do |t|
     t.string "name"
-    t.bigint "owner_id"
+    t.bigint "user_id"
     t.string "description"
     t.string "image"
     t.string "condition"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["owner_id"], name: "index_items_on_owner_id"
+    t.index ["user_id"], name: "index_items_on_user_id"
   end
 
   create_table "rented_items", force: :cascade do |t|
-    t.bigint "borrower_id"
+    t.bigint "renter_id"
     t.bigint "item_id"
     t.date "start_date"
     t.date "end_date"
@@ -41,8 +41,8 @@ ActiveRecord::Schema.define(version: 2019_04_02_185111) do
     t.string "end_condition"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["borrower_id"], name: "index_rented_items_on_borrower_id"
     t.index ["item_id"], name: "index_rented_items_on_item_id"
+    t.index ["renter_id"], name: "index_rented_items_on_renter_id"
   end
 
   create_table "user_groups", force: :cascade do |t|
@@ -61,8 +61,8 @@ ActiveRecord::Schema.define(version: 2019_04_02_185111) do
     t.string "city"
     t.string "state"
     t.string "zip_code"
-    t.integer "owner_rating"
-    t.integer "borrower_rating"
+    t.integer "user_rating"
+    t.integer "renter_rating"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

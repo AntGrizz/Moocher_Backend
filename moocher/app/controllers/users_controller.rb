@@ -2,7 +2,7 @@ class UsersController < ApplicationController
 
   def index
     all_users = User.all
-    render json: all_users.map{|user| user.user_serializer}
+    render json: all_users.map{|user| user.user_items_serializer}
   end
 
   def new

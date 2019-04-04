@@ -7,8 +7,8 @@ class CreateUsers < ActiveRecord::Migration[5.2]
       t.string :city
       t.string :state
       t.string :zip_code
-      t.integer :owner_rating
-      t.integer :borrower_rating
+      t.integer :user_rating
+      t.integer :renter_rating
 
       t.timestamps
     end

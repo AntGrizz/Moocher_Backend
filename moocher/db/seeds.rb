@@ -10,22 +10,22 @@ User.destroy_all
 Item.destroy_all
 RentedItem.destroy_all
 
-user1 = User.create(name: 'Anthony', username: 'ant_grizz', street: '8025 13th Street', city:'Silver Spring', zip_code: 21075, state: 'MD', owner_rating: 5, borrower_rating: 5)
+user1 = User.create(name: 'Anthony', username: 'ant_grizz', street: '8025 13th Street', city:'Silver Spring', zip_code: 21075, state: 'MD', user_rating: 5, renter_rating: 5)
 
-user2 = User.create(name: 'Aaron', username: 'agthegreat1', street: '8025 13th Street', city:'Silver Spring', zip_code: 21075, state: 'MD', owner_rating: 5, borrower_rating: 4)
+user2 = User.create(name: 'Aaron', username: 'agthegreat1', street: '8025 13th Street', city:'Silver Spring', zip_code: 21075, state: 'MD', user_rating: 5, renter_rating: 4)
 
-user3 = User.create(name: 'Annette', username: 'aaawayne3', street: '7121 Little Cove Farm Way', city:'Elkridge', zip_code: '21075', state: 'MD', owner_rating: 4, borrower_rating: 5)
-
-
-item1 = Item.create(name: 'Basketball', description: 'spalding basketball', image: 'basketball', condition: 'good', owner: user1)
-
-item2 = Item.create(name: 'Book', description: 'The Spook Who Sat By The Door', image: 'book', condition: 'good', owner: user1)
-
-item3 = Item.create(name: 'Instant Pot', description: 'New Instant Pot', image: 'instant pot', condition: 'good', owner: user1)
+user3 = User.create(name: 'Annette', username: 'aaawayne3', street: '7121 Little Cove Farm Way', city:'Elkridge', zip_code: '21075', state: 'MD', user_rating: 4, renter_rating: 5)
 
 
-RentedItem.create( borrower: user2, item: item1, start_date: '2019-04-02', end_date: '2019-05-05', start_condition: 'good', end_condition: 'good')
+item1 = Item.create(name: 'Basketball', description: 'spalding basketball', image: 'basketball', condition: 'good', user: user1)
 
-RentedItem.create( borrower: user2, item: item2, start_date: '2019-04-21', end_date: '2019-05-05', start_condition: 'good', end_condition: 'good')
+item2 = Item.create(name: 'Book', description: 'The Spook Who Sat By The Door', image: 'book', condition: 'good', user: user1)
 
-RentedItem.create( borrower: user3, item: item3, start_date: '2019-04-21', end_date: '2019-05-05', start_condition: 'good', end_condition: 'good')
+item3 = Item.create(name: 'Instant Pot', description: 'New Instant Pot', image: 'instant pot', condition: 'good', user: user1)
+
+
+RentedItem.create( renter: user2, item: item1, start_date: '2019-04-02', end_date: '2019-05-05', start_condition: 'good', end_condition: 'good')
+
+RentedItem.create( renter: user2, item: item2, start_date: '2019-04-21', end_date: '2019-05-05', start_condition: 'good', end_condition: 'good')
+
+RentedItem.create( renter: user3, item: item3, start_date: '2019-04-21', end_date: '2019-05-05', start_condition: 'good', end_condition: 'good')
