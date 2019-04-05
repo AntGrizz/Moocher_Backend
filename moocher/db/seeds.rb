@@ -14,7 +14,7 @@ user1 = User.create(name: 'Anthony', username: 'ant_grizz', street: '8025 13th S
 
 user2 = User.create(name: 'Aaron', username: 'agthegreat1', street: '8025 13th Street', city:'Silver Spring', zip_code: 21075, state: 'MD', user_rating: 5, renter_rating: 4)
 
-user3 = User.create(name: 'Annette', username: 'aaawayne3', street: '7121 Little Cove Farm Way', city:'Elkridge', zip_code: '21075', state: 'MD', user_rating: 4, renter_rating: 5)
+user3 = User.create(name: 'Annette', username: 'aaawayne3', street: '7121 Little Cove Farm Way', city:'Elkridge', zip_code: 21075, state: 'MD', user_rating: 4, renter_rating: 5)
 
 
 item1 = Item.create(name: 'Basketball', description: 'spalding basketball', image: 'basketball', condition: 'good', user: user1)
