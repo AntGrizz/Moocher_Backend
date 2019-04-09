@@ -1,8 +1,4 @@
 class ApplicationController < ActionController::API
-  private
-  def secret_key
-    'h3llo'
-  end
 
   #given a payload, return a token
   def encode(payload)
