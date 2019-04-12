@@ -39,6 +39,7 @@ ActiveRecord::Schema.define(version: 2019_04_02_185111) do
     t.date "end_date"
     t.string "start_condition"
     t.string "end_condition"
+    t.string "status"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["item_id"], name: "index_rented_items_on_item_id"

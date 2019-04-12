@@ -15,7 +15,7 @@ class UsersController < ApplicationController
   end
 
   def create
-
+    User.create(first_name: params[:first_name], last_name: params[:last_name], username: params[:username], password: params[:password], street: params[:password], city: params[:city], zip_code: params[:zip_code], state: params[:state], user_rating: params[:first_name], renter_rating: 5)
   end
 
   def profile
@@ -23,7 +23,7 @@ class UsersController < ApplicationController
     payload = decode(token)
     @user = User.find(payload["user_id"])
     if @user
-      render json: @user
+      render json: @user.user_items_serializer
     end
   end
 

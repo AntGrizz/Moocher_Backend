@@ -7,6 +7,7 @@ class CreateRentedItems < ActiveRecord::Migration[5.2]
       t.date :end_date
       t.string :start_condition
       t.string :end_condition
+      t.string :status
 
       t.timestamps
     end

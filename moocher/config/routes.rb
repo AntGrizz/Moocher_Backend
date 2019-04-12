@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
   resources :items
   resources :users, only: [:create, :index]
+  resources :groups, only: [:create, :index]
   post '/login', to: 'auth#create'
   get '/profile', to: 'users#profile'
   resources :rented_items
