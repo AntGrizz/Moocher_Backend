@@ -15,10 +15,21 @@ class UsersController < ApplicationController
   end
 
   def create
-    User.create(first_name: params[:first_name], last_name: params[:last_name], username: params[:username], password: params[:password], street: params[:password], city: params[:city], zip_code: params[:zip_code], state: params[:state], user_rating: params[:first_name], renter_rating: 5)
+    @user = User.create(user_params)
+      if @user.save
+      payload = {user_id: @user.id}
+      token = encode(payload)
+      render json: {
+        message: "Authenticated! You are logged in",
+        authenticated: true,
+        user: @user.user_items_serializer,
+        token: token
+      }, status: :accepted
+    end
   end
 
   def profile
+    # byebug
     token = request.headers["Authentication"].split(' ')[1]
     payload = decode(token)
     @user = User.find(payload["user_id"])
@@ -28,6 +39,10 @@ class UsersController < ApplicationController
   end
 
   private
+
+  def user_params
+    params.require(:user).permit(:first_name, :last_name, :username, :password, :street, :city, :zip_code, :state, :user_rating, :renter_rating)
+  end
 
   def get_user
     @user = Users.find(params[:id])

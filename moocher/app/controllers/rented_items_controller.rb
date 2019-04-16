@@ -35,7 +35,7 @@ before_action :get_rental, only: [:show, :edit, :update]
   end
 
   def rented_items_params
-    params.permit(:status)
+    params.require(:rented_item).permit(:status, :end_condition)
   end
 
 
