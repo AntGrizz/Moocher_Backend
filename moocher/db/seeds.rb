@@ -64,21 +64,21 @@ item21 = Item.create(name: "Blue Ray Player", description: "Black Blue Ray Playe
 
 
 
-RentedItem.create( renter: user2, item: item1, start_date: '2019-04-02', end_date: '2019-05-05', start_condition: 'Good', end_condition: 'Good', status: 'rented')
+RentedItem.create( renter: user2, item: item1, start_date: '2019-04-02', end_date: '2019-05-05', start_condition: 'Good', end_condition: 'Good', status: 'Rented')
 
-RentedItem.create( renter: user2, item: item2, start_date: '2019-04-21', end_date: '2019-05-05', start_condition: 'Good', end_condition: 'Good', status: 'rented')
+RentedItem.create( renter: user2, item: item2, start_date: '2019-04-21', end_date: '2019-05-05', start_condition: 'Good', end_condition: 'Good', status: 'Rented')
 
-RentedItem.create( renter: user3, item: item3, start_date: '2019-04-21', end_date: '2019-05-05', start_condition: 'Good', end_condition: 'Good', status: 'rented')
+RentedItem.create( renter: user3, item: item3, start_date: '2019-04-21', end_date: '2019-05-05', start_condition: 'Good', end_condition: 'Good', status: 'Rented')
 
-RentedItem.create( renter: user3, item: item4, start_date: '2019-04-21', end_date: '2019-05-05', start_condition: 'Good', end_condition: 'Good', status: 'pending')
+RentedItem.create( renter: user3, item: item4, start_date: '2019-04-21', end_date: '2019-05-05', start_condition: 'Good', end_condition: 'Good', status: 'Pending')
 
-RentedItem.create( renter: user3, item: item5, start_date: '2019-04-21', end_date: '2019-05-05', start_condition: 'Good', end_condition: 'Good', status: 'pending')
+RentedItem.create( renter: user3, item: item5, start_date: '2019-04-21', end_date: '2019-05-05', start_condition: 'Good', end_condition: 'Good', status: 'Pending')
 
-RentedItem.create( renter: user2, item: item6, start_date: '2019-04-21', end_date: '2019-05-05', start_condition: 'Good', end_condition: 'Good', status: 'pending')
+RentedItem.create( renter: user2, item: item6, start_date: '2019-04-21', end_date: '2019-05-05', start_condition: 'Good', end_condition: 'Good', status: 'Pending')
 
-RentedItem.create( renter: user1, item: item10, start_date: '2019-04-21', end_date: '2019-05-05', start_condition: 'Good', end_condition: 'Good', status: 'rented')
+RentedItem.create( renter: user1, item: item10, start_date: '2019-04-21', end_date: '2019-05-05', start_condition: 'Good', end_condition: 'Good', status: 'Rented')
 
-RentedItem.create( renter: user3, item: item10, start_date: '2019-05-10', end_date: '2019-05-15', start_condition: 'Good', end_condition: 'Good', status: 'rented')
+RentedItem.create( renter: user3, item: item10, start_date: '2019-05-10', end_date: '2019-05-15', start_condition: 'Good', end_condition: 'Good', status: 'Rented')
 
 group1 = Group.create(name: "Family")
 group2 = Group.create(name: "Friends")

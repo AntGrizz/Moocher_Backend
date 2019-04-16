@@ -3,7 +3,7 @@ class Group < ApplicationRecord
   has_many :users, through: :user_groups
 
   def group_item_serializer
-      {name: self.name, users: self.users, items: self.users.map { |user| user.items}.flatten.map { |item| item.item_group_serializer} }
+      {name: self.name, users: self.users, items: self.users.map { |user| user.items}.flatten.map { |item| item.item_serializer} }
   end
 
 end
