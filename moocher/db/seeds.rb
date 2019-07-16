@@ -30,7 +30,7 @@ item5 = Item.create(name: 'Playstation 4', description: 'Playstation 4', image: 
 
 item6 = Item.create(name: 'DSLR', description: 'old camera', image: 'https://www.usa.canon.com/internet/wcm/connect/us/327de19b-5fd6-4d22-88b2-dfa7a47486d8/eos-5ds-r-dslr-camera-3q-lens-300x300-v3.png?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_P1KGHJ01L85180AUEPQQJ53034-327de19b-5fd6-4d22-88b2-dfa7a47486d8-mn5b7FZ&&alt=', condition: 'Poor', user: user1)
 
-item7 = Item.create(name: "Jordan 1's", description: "Banned Jordan 1's, creases on the left shoe toebox", image: "https://www.airmaxp.com/image/cache/catalog/products/air-jordan-1-1510906-300x300.jpg", condition: 'Fair', user: user1)
+item7 = Item.create(name: "Jordan 1's", description: "Banned Jordan 1's, creases on the left shoe toebox", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF-jfqBtGPxpf_Ijfh5GSwBMArtSIq4CxmXTKffdNCQETFeB5a", condition: 'Fair', user: user1)
 
 item8 = Item.create(name: "Wilson Baseball Glove", description: "Old Baseball Glove", image: 'https://i.ebayimg.com/images/g/M2cAAOSwiONYLasI/s-l300.jpg', condition: 'Poor', user: user1)
 
