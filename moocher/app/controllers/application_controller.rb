@@ -1,6 +1,9 @@
+require "byebug"
+
 class ApplicationController < ActionController::API
   #given a payload, return a token
   def encode(payload)
+    # byebug
     JWT.encode(payload, Rails.application.credentials.jwt_key[:key], 'HS256')
   end
 

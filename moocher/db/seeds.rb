@@ -11,9 +11,9 @@ require 'database_cleaner'
 DatabaseCleaner.strategy = :truncation
 DatabaseCleaner.clean
 
-user1 = User.create(first_name: 'Anthony', last_name: 'Gregg', username: 'ant_grizz', password: 'password1', street: '8025 13th Street', city:'Silver Spring', zip_code: 21075, state: 'MD', user_rating: 5, renter_rating: 5)
+user1 = User.create(first_name: 'Anthony', last_name: 'Gregg', username: 'Anthony', password: 'password1', street: '8025 13th Street', city:'Silver Spring', zip_code: 21075, state: 'MD', user_rating: 5, renter_rating: 5)
 
-user2 = User.create(first_name: 'Aaron', last_name:'Gregg', username: 'agthegreat1', password: 'password1', street: '8025 13th Street', city:'Silver Spring', zip_code: 21075, state: 'MD', user_rating: 5, renter_rating: 4)
+user2 = User.create(first_name: 'Aaron', last_name:'Gregg', username: 'Aaron', password: 'password1', street: '8025 13th Street', city:'Silver Spring', zip_code: 21075, state: 'MD', user_rating: 5, renter_rating: 4)
 
 user3 = User.create(first_name: 'Annette', last_name:'Anderson', username: 'aaawayne3', password: 'password1', street: '7121 Little Cove Farm Way', city:'Elkridge', zip_code: 21075, state: 'MD', user_rating: 4, renter_rating: 5)
 
@@ -64,21 +64,21 @@ item21 = Item.create(name: "Blue Ray Player", description: "Black Blue Ray Playe
 
 
 
-RentedItem.create( renter: user2, item: item1, start_date: '2019-04-02', end_date: '2019-05-05', start_condition: 'Good', end_condition: 'Good', status: 'Rented')
+RentedItem.create( renter: user2, item: item1, start_date: '2019-09-02', end_date: '2019-09-07', start_condition: 'Good', end_condition: 'Good', status: 'Rented')
 
-RentedItem.create( renter: user2, item: item2, start_date: '2019-04-21', end_date: '2019-05-05', start_condition: 'Good', end_condition: 'Good', status: 'Rented')
+RentedItem.create( renter: user2, item: item2, start_date: '2019-09-21', end_date: '2019-09-24', start_condition: 'Good', end_condition: 'Good', status: 'Rented')
 
-RentedItem.create( renter: user3, item: item3, start_date: '2019-04-21', end_date: '2019-05-05', start_condition: 'Good', end_condition: 'Good', status: 'Rented')
+RentedItem.create( renter: user3, item: item3, start_date: '2019-09-21', end_date: '2019-09-24', start_condition: 'Good', end_condition: 'Good', status: 'Rented')
 
-RentedItem.create( renter: user3, item: item4, start_date: '2019-04-21', end_date: '2019-05-05', start_condition: 'Good', end_condition: 'Good', status: 'Pending')
+RentedItem.create( renter: user3, item: item4, start_date: '2019-09-21', end_date: '2019-09-30', start_condition: 'Good', end_condition: 'Good', status: 'Pending')
 
-RentedItem.create( renter: user3, item: item5, start_date: '2019-04-21', end_date: '2019-05-05', start_condition: 'Good', end_condition: 'Good', status: 'Pending')
+RentedItem.create( renter: user3, item: item5, start_date: '2019-04-21', end_date: '2019-05-09', start_condition: 'Good', end_condition: 'Good', status: 'Pending')
 
-RentedItem.create( renter: user2, item: item6, start_date: '2019-04-21', end_date: '2019-05-05', start_condition: 'Good', end_condition: 'Good', status: 'Pending')
+RentedItem.create( renter: user2, item: item6, start_date: '2019-09-21', end_date: '2019-10-05', start_condition: 'Good', end_condition: 'Good', status: 'Pending')
 
-RentedItem.create( renter: user1, item: item10, start_date: '2019-04-21', end_date: '2019-05-05', start_condition: 'Good', end_condition: 'Good', status: 'Rented')
+RentedItem.create( renter: user1, item: item10, start_date: '2019-09-21', end_date: '2019-10-05', start_condition: 'Good', end_condition: 'Good', status: 'Rented')
 
-RentedItem.create( renter: user3, item: item10, start_date: '2019-05-10', end_date: '2019-05-15', start_condition: 'Good', end_condition: 'Good', status: 'Rented')
+RentedItem.create( renter: user3, item: item10, start_date: '2019-10-10', end_date: '2019-10-15', start_condition: 'Good', end_condition: 'Good', status: 'Rented')
 
 group1 = Group.create(name: "Family")
 group2 = Group.create(name: "Friends")
