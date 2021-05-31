@@ -8,8 +8,8 @@
 
 # require 'database_cleaner'
 
-DatabaseCleaner.strategy = :truncation
-DatabaseCleaner.clean
+# DatabaseCleaner.strategy = :truncation
+# DatabaseCleaner.clean
 
 user1 = User.create(first_name: 'Anthony', last_name: 'Gregg', username: 'Anthony', password: 'password1', street: '8025 13th Street', city:'Silver Spring', zip_code: 21075, state: 'MD', user_rating: 5, renter_rating: 5)
 
