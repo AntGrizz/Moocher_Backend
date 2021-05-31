@@ -6,7 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-require 'database_cleaner'
+# require 'database_cleaner'
 
 DatabaseCleaner.strategy = :truncation
 DatabaseCleaner.clean
@@ -64,21 +64,21 @@ item21 = Item.create(name: "Blue Ray Player", description: "Black Blue Ray Playe
 
 
 
-RentedItem.create( renter: user2, item: item1, start_date: '2019-09-02', end_date: '2019-09-07', start_condition: 'Good', end_condition: 'Good', status: 'Rented')
+RentedItem.create( renter: user2, item: item1, start_date: '2021-09-02', end_date: '2021-09-07', start_condition: 'Good', end_condition: 'Good', status: 'Rented')
 
-RentedItem.create( renter: user2, item: item2, start_date: '2019-09-21', end_date: '2019-09-24', start_condition: 'Good', end_condition: 'Good', status: 'Rented')
+RentedItem.create( renter: user2, item: item2, start_date: '2021-09-21', end_date: '2021-09-24', start_condition: 'Good', end_condition: 'Good', status: 'Rented')
 
-RentedItem.create( renter: user3, item: item3, start_date: '2019-09-21', end_date: '2019-09-24', start_condition: 'Good', end_condition: 'Good', status: 'Rented')
+RentedItem.create( renter: user3, item: item3, start_date: '2021-09-21', end_date: '2021-09-24', start_condition: 'Good', end_condition: 'Good', status: 'Rented')
 
-RentedItem.create( renter: user3, item: item4, start_date: '2019-09-21', end_date: '2019-09-30', start_condition: 'Good', end_condition: 'Good', status: 'Pending')
+RentedItem.create( renter: user3, item: item4, start_date: '2021-09-21', end_date: '2021-09-30', start_condition: 'Good', end_condition: 'Good', status: 'Pending')
 
-RentedItem.create( renter: user3, item: item5, start_date: '2019-04-21', end_date: '2019-05-09', start_condition: 'Good', end_condition: 'Good', status: 'Pending')
+RentedItem.create( renter: user3, item: item5, start_date: '2021-04-21', end_date: '2021-05-09', start_condition: 'Good', end_condition: 'Good', status: 'Pending')
 
-RentedItem.create( renter: user2, item: item6, start_date: '2019-09-21', end_date: '2019-10-05', start_condition: 'Good', end_condition: 'Good', status: 'Pending')
+RentedItem.create( renter: user2, item: item6, start_date: '2021-09-21', end_date: '2021-10-05', start_condition: 'Good', end_condition: 'Good', status: 'Pending')
 
-RentedItem.create( renter: user1, item: item10, start_date: '2019-09-21', end_date: '2019-10-05', start_condition: 'Good', end_condition: 'Good', status: 'Rented')
+RentedItem.create( renter: user1, item: item10, start_date: '2021-09-21', end_date: '2021-10-05', start_condition: 'Good', end_condition: 'Good', status: 'Rented')
 
-RentedItem.create( renter: user3, item: item10, start_date: '2019-10-10', end_date: '2019-10-15', start_condition: 'Good', end_condition: 'Good', status: 'Rented')
+RentedItem.create( renter: user3, item: item10, start_date: '2021-10-10', end_date: '2021-10-15', start_condition: 'Good', end_condition: 'Good', status: 'Rented')
 
 group1 = Group.create(name: "Family")
 group2 = Group.create(name: "Friends")
