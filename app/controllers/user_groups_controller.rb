@@ -1,0 +1,4 @@
+class UserGroupsController < ApplicationController
+
+
+end
