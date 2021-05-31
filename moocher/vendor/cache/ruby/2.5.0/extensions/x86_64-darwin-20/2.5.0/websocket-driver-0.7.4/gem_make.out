@@ -1,0 +1,16 @@
+current directory: /Users/anthonygregg/Flatiron/moocher/moocher_backend/moocher/vendor/cache/ruby/2.5.0/gems/websocket-driver-0.7.4/ext/websocket-driver
+/Users/anthonygregg/.rvm/rubies/ruby-2.5.8/bin/ruby -I /Users/anthonygregg/.rvm/rubies/ruby-2.5.8/lib/ruby/site_ruby/2.5.0 -r ./siteconf20210531-49548-alx49e.rb extconf.rb
+creating Makefile
+
+current directory: /Users/anthonygregg/Flatiron/moocher/moocher_backend/moocher/vendor/cache/ruby/2.5.0/gems/websocket-driver-0.7.4/ext/websocket-driver
+make "DESTDIR=" clean
+
+current directory: /Users/anthonygregg/Flatiron/moocher/moocher_backend/moocher/vendor/cache/ruby/2.5.0/gems/websocket-driver-0.7.4/ext/websocket-driver
+make "DESTDIR="
+compiling websocket_mask.c
+linking shared-object websocket_mask.bundle
+ld: warning: dylib (/usr/local/lib/libgmp.dylib) was built for newer macOS version (11.0) than being linked (10.16)
+
+current directory: /Users/anthonygregg/Flatiron/moocher/moocher_backend/moocher/vendor/cache/ruby/2.5.0/gems/websocket-driver-0.7.4/ext/websocket-driver
+make "DESTDIR=" install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 websocket_mask.bundle ./.gem.20210531-49548-11kve0n
