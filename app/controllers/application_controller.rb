@@ -1,4 +1,4 @@
-require "byebug"
+# require "byebug"
 
 class ApplicationController < ActionController::API
   #given a payload, return a token
