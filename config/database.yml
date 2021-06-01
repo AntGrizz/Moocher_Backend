@@ -81,5 +81,6 @@ test:
 production:
   <<: *default
   database: moocher_production
-  username: moocher
-  password: <%= ENV['MOOCHER_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
+  # username: moocher
+  # password: <%= ENV['MOOCHER_DATABASE_PASSWORD'] %>
